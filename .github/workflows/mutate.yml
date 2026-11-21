@@ -24,6 +24,9 @@ on:
       jobs:
         description: "Only these jobs, by name (store-1 scripts-3), an earlier run's run again; every one by default"
         default: ""
+  # THROWAWAY: the baseline's run, from a branch made only to start it (never merged)
+  push:
+    branches: [h1-2-baseline]
   pull_request:
     paths:
       - .github/workflows/mutate.yml
